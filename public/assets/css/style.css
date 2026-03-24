@@ -1,0 +1,33 @@
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    background-color: #141414;
+    color: white;
+}
+
+main {
+    margin-top: 2vh;
+}
+
+div.table-responsive {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+
+.card {
+    transition: transform 0.3s;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-form:hover {
+    transform: scale(1.02);
+}
