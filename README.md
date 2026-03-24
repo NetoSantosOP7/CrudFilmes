@@ -14,4 +14,4 @@ Sistema de gerenciamento de filmes desenvolvido em PHP puro com padrão MVC e PD
 - Docker
 - Deployado na render
 
-- teste: https://crudfilmes-xxeo.onrender.com/
+teste: https://crudfilmes-xxeo.onrender.com/
