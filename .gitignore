@@ -1,3 +1,5 @@
 .env
-/public/uploads/*
-!public/uploads/.gitkeep
+/public/uploads/foto_*.jpg
+/public/uploads/foto_*.jpeg
+/public/uploads/foto_*.png
+/public/uploads/foto_*.webp
