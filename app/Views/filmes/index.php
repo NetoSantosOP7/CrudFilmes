@@ -24,8 +24,8 @@
   <title>Filmes</title>
 </head>
 
-<body class="d-flex vw-100 vh-100 align-items-center justify-content-center">
-  <main class="text-center">
+<body>
+  <main class="container text-center py-4">
 
     <h1>Filmes</h1>
 
