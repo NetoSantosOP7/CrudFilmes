@@ -32,33 +32,35 @@
     <a href="index.php?action=create" class="btn btn-primary">Novo Filme</a>
     <a href="index.php?action=catalogo" class="btn btn-primary">Catalogo</a><br><br>
 
-    <div class="table-responsive">
-      <table class="table table-dark table-hover table-striped table-bordered">
-        <tr>
-          <th>Id</th>
-          <th>Título</th>
-          <th>Diretor</th>
-          <th>Genero</th>
-          <th>Ano</th>
-          <th>Sinopse</th>
-          <th>Acoes</th>
-        </tr>
-
-        <?php foreach ($filmes as $filme): ?>
+    <div class="table-wrapper">
+      <div class="table-responsive">
+        <table class="table table-dark table-hover table-striped table-bordered">
           <tr>
-            <td><?= htmlspecialchars($filme['id']) ?></td>
-            <td><?= htmlspecialchars($filme['titulo']) ?></td>
-            <td><?= htmlspecialchars($filme['diretor']) ?></td>
-            <td><?= htmlspecialchars($filme['genero']) ?></td>
-            <td><?= htmlspecialchars($filme['ano']) ?></td>
-            <td><?= htmlspecialchars($filme['sinopse']) ?></td>
-            <td>
-              <a href="index.php?action=edit&id=<?= $filme['id'] ?>" class="btn btn-success">Editar</a>
-              <a href="index.php?action=destroy&id=<?= $filme['id'] ?>" class="btn btn-danger">Excluir</a>
-            </td>
+            <th>Id</th>
+            <th>Título</th>
+            <th>Diretor</th>
+            <th>Genero</th>
+            <th>Ano</th>
+            <th>Sinopse</th>
+            <th>Acoes</th>
           </tr>
-        <?php endforeach; ?>
-      </table>
+
+          <?php foreach ($filmes as $filme): ?>
+            <tr>
+              <td><?= htmlspecialchars($filme['id']) ?></td>
+              <td><?= htmlspecialchars($filme['titulo']) ?></td>
+              <td><?= htmlspecialchars($filme['diretor']) ?></td>
+              <td><?= htmlspecialchars($filme['genero']) ?></td>
+              <td><?= htmlspecialchars($filme['ano']) ?></td>
+              <td><?= htmlspecialchars($filme['sinopse']) ?></td>
+              <td>
+                <a href="index.php?action=edit&id=<?= $filme['id'] ?>" class="btn btn-success">Editar</a>
+                <a href="index.php?action=destroy&id=<?= $filme['id'] ?>" class="btn btn-danger">Excluir</a>
+              </td>
+            </tr>
+          <?php endforeach; ?>
+        </table>
+      </div>
     </div>
   </main>
 </body>

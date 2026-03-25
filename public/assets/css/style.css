@@ -11,11 +11,10 @@ main {
     margin-top: 2vh;
 }
 
-div.table-responsive {
+.table-wrapper {
     overflow: hidden;
     border-radius: 20px;
 }
-
 
 .card {
     transition: transform 0.3s;
